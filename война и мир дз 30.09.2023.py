@@ -1,0 +1,23 @@
+print("code 1")
+string=input("Write a sentence ")
+print("Number of words: "+str(len(string.split())))
+print("code 2")
+string=input("Write a string ")
+let=input("Write a symbol to swap to ")
+print("Changed string Is: "+string.replace(let,"😎"))
+import collections
+print("code 3")
+string=input("Write a string to swap ")
+print(collections.Counter(string))
+print("code 4")
+f=open("voyna-i-mir-tom-1.txt")
+g=open("Answer_for_strings.txt","w")
+string=f.read()
+spst=string.split()
+num={}
+for i in spst:
+    num[i]=spst.count(i)
+g.write(str(num))
+print("Find the answer in 'Answer_for_strings.txt'")
+g.close()
+f.close()
